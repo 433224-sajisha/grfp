@@ -1,0 +1,2457 @@
+[{
+  "_id": {
+    "$oid": "67c1c5a9427e60027de4424c"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 100,
+        "segments": [
+          {
+            "color": "#dbdee0",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "description": "Create Python scripts that involve processing large JSONL files asynchronously and ensure modularization by separating core tasks such as encryption, fraud checks, and API handling into helper functions."
+          },
+          {
+            "description": "Handle robust database operations for secure storage of sensitive data in SQLite with optimization for high transaction volume."
+          },
+          {
+            "description": "Improve handling of external API calls to address potential failures, ensuring retries or fallback mechanisms while maintaining the modular structure."
+          },
+          {
+            "description": "Ensure memory-efficient processing for large datasets without compromising on modular code design."
+          },
+          {
+            "description": "Optimize for performance and maintain readable, well-structured code that balances modularity with performance improvement."
+          }
+        ],
+        "failure_reason": "The Code Assist Generated Code removed modularization (e.g., splitting encryption operations and fraud checks into separate helper functions), reducing complexity. However, this led to shorter code with reduced modularity.",
+        "actionable_insights": "Introduce augmentation strategies that explicitly test modularization requirements for generated code. Validate if code adheres to modular design principles even under varying levels of complexity and performance conditions. Augment test data to include scenarios focusing on breaking tasks into modular components while ensuring optimal performance.",
+        "potential_gaps": "Lack of targeted scenarios that enforce modularization during code generation, particularly under constraints like performance optimization and asynchronous processing.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c63f427e60027de44266"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#2f697f",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Ground Truth Similarity",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#b755f0",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#9c3ee7",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#0df5cb",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "scenario": "A developer provides a prompt requesting efficient method overriding, but the generated code includes unnecessary computations.",
+            "issue_addressed": "Ensuring the system understands and appropriately follows directives on code efficiency."
+          },
+          {
+            "scenario": "A user asks for code adhering strictly to provided constraints, but the generated solution introduces unintended behavior.",
+            "issue_addressed": "Alignment of generated output with user-specified constraints."
+          },
+          {
+            "scenario": "A customer requires code snippets with no extraneous additions, but the test highlights the introduction of redundant logic.",
+            "issue_addressed": "Avoidance of unnecessary computations and adherence to efficiency guidelines."
+          },
+          {
+            "scenario": "A user requests minimal and effective extensions of base functionality, but the generated implementation misaligns with the objective.",
+            "issue_addressed": "Preventing misinterpretations of instructions related to adhering to base functionality."
+          },
+          {
+            "scenario": "A scenario where the expected output is 'Not Applicable,' but the system does not account for this and still attempts an incorrect comparison.",
+            "issue_addressed": "Proper handling of cases where the expected output does not allow for direct evaluations."
+          }
+        ],
+        "failure_reason": "The system exhibits an inability to follow efficiency-focused directives, introduces unintended logic, and fails to align results with minimal requirements. Additionally, it mishandles scenarios where comparisons are not applicable.",
+        "actionable_insights": {
+          "actions": [
+            {
+              "recommendation": "Introduce specific augmentations that test adherence to efficiency constraints in methods or implementations provided in prompts."
+            },
+            {
+              "recommendation": "Incorporate test cases with clear directives to avoid unnecessary computations, validating the system's compliance with this instruction."
+            },
+            {
+              "recommendation": "Create augmentation scenarios where the expected result is 'Not Applicable' to improve the handling of such cases in evaluations."
+            },
+            {
+              "recommendation": "Add highly detailed prompts to clarify the nuances of efficient base functionality reuse and ensure the system parses and adheres to this intent."
+            },
+            {
+              "recommendation": "Implement tests to verify the alignment between generated code and user constraints, highlighting areas of misinterpretation for debugging."
+            }
+          ]
+        },
+        "potential_gaps": [
+          "Lack of coverage for test cases focusing on efficiency constraints.",
+          "Insufficient data scenarios handling cases of 'Not Applicable' expected values.",
+          "Deficient augmentation for instruction adherence, especially when instructions involve subtle behaviors like efficient reuse of base functionality.",
+          "Absence of augmentations to validate avoidance of unintended or redundant operations in prompt-driven generated code."
+        ],
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c677427e60027de44274"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Ground Truth Similarity",
+        "totalPercentage": 100,
+        "segments": [
+          {
+            "color": "#3b8422",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "description": "The expected output is undefined or 'Not Applicable', resulting in a failure to compare the system's output against a valid ground truth.",
+            "scenario": "A customer asks for a random or ambiguous query unrelated to travel, like a technical coding request, which is out of scope for the system."
+          },
+          {
+            "description": "Undefined ground truth scenarios such as system receiving input without clear expected output for a metric comparison.",
+            "scenario": "The customer conversation pertains to a custom software development request instead of travel-related inquiries."
+          },
+          {
+            "description": "System tested with data that does not provide a meaningful expected context or answer.",
+            "scenario": "A user asks for general knowledge without a clear travel-related query or request, leaving the system uncertain on how to respond."
+          },
+          {
+            "description": "Outputs where an ill-defined objective prevents the system from having a valid performance comparison.",
+            "scenario": "Customer phrases a completely unrelated query, such as asking for stock prices, without any travel domain relevance."
+          },
+          {
+            "description": "Scenarios where there is no defined or realistic ground truth for the test scenario.",
+            "scenario": "The system receives a free-form input about a unique customization request, like managing data records, unrelated to bookings or itinerary."
+          }
+        ],
+        "failure_reason": "Given the expected output is 'Not Applicable', there is no basis for comparison. The similarity index therefore results in zero, indicating a complete mismatch.",
+        "actionable_insights": "Define clear and realistic ground truth expectations for all test scenarios. Avoid using test inputs where the system's output cannot be meaningfully evaluated or compared. Ensure the test cases correspond to the system's domain expertise (e.g., travel-related queries).",
+        "potential_gaps": "Lack of well-defined ground truth outputs for some test cases. Testing inputs that are irrelevant to the system's domain or expertise. Absence of clarity in expected outputs for certain augmentation types or metrics.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c6be427e60027de44282"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#9e560b",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#cef84d",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#aa9064",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#8e6886",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Test a Python script that validates fraud detection via API for large JSONL transaction files.",
+          "Simulate processing and grouping large datasets asynchronously by user and date.",
+          "Test handling of high-volume JSONL files to ensure secure storage in an encrypted SQLite database.",
+          "Introduce API failure scenarios to validate error handling mechanisms in the script.",
+          "Evaluate the script's performance in optimizing processing time for large JSONL files."
+        ],
+        "failure_reason": "None of the required instructions, including fraud checks, grouping by user and date, encrypted storage in SQLite, API failure handling, or performance optimization, were implemented in the generated code.",
+        "actionable_insights": "Develop proper implementation logic for the test cases to meet each specified instruction. Simulate realistic scenarios like transaction grouping, encrypted storage, and API failure handling for better performance analysis.",
+        "potential_gaps": "Lack of implementation for fundamental prompt instructions such as fraud detection, grouping, encryption, error handling, and performance optimization.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Generate a prompt that creates a Python script for fraud detection and asynchronous processing of incoming user transactions.",
+          "Analyze reverse-engineered outcomes for grouping transactions by user and storing securely.",
+          "Generate inferred prompts that include guidance on resilient systems for API-validation processes.",
+          "Simulate a script's ability to output error-handling scenarios effectively for failed API calls.",
+          "Test the alignment between specific goals in ground truth and improvements in dynamically generated prompts."
+        ],
+        "failure_reason": "No generated prompt or output was provided, leading to a complete misalignment between the detailed ground truth and the expected generated prompt.",
+        "actionable_insights": "Introduce proper mechanisms to generate prompts aligned with ground-truth prompts. Validate code generation through pre-tested logic for accurate assessments of reverse engineering tasks.",
+        "potential_gaps": "Absence of generated prompts or output reflects a lack of alignment between ground truth and the augmentation logic.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Compare the length of dynamically generated code against the length of expected code for fraud detection modules.",
+          "Evaluate expected and generated outputs for handling SQLite encryption in transaction systems.",
+          "Assess performance variations in processing high-volume JSONL data asynchronously.",
+          "Determine code length feasibility in cases involving multiple error-handling layers for API failures.",
+          "Simulate variations in script complexity when implementing fraud detection and transaction grouping."
+        ],
+        "failure_reason": "Both the generated and expected code were empty, leading to zero variation in code length.",
+        "actionable_insights": "Ensure that generated code exists and matches task complexity for appropriate length comparisons. Augment scenarios to test robust code generation, which reflects real-world requirements correctly.",
+        "potential_gaps": "No generative output for comparison; this prevents the system from assessing variations in code lengths.",
+        "priority": "Low"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Test asynchronous processing of large JSONL data to meet user-defined goals.",
+          "Simulate error-handling capacities for failed API calls in a robust Python script.",
+          "Evaluate the ability to group data by user and date for better organization.",
+          "Benchmark fraud detection capabilities and efficiency through high-volume transaction flows.",
+          "Ensure expected implementation matches user prompts for encrypting data securely in SQLite."
+        ],
+        "failure_reason": "The generated code is entirely empty, lacking any functionality or implementation to fulfill the prompt's goals, including fraud detection, asynchronous processing, encryption, and error handling.",
+        "actionable_insights": "Enhance code generation capabilities to include basic implementations for key requirements like fraud checks and encryption. Test under diverse scenarios for completeness and alignment.",
+        "potential_gaps": "Failure to implement even the most basic features of the user-defined prompt indicates limited support for system goal accuracy testing.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c6eb427e60027de44290"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#6a6d75",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#b44916",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#4d90ad",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Generating code that implements asynchronous processing of transactions in Python.",
+          "Generating code that securely stores data in an encrypted SQLite database.",
+          "Generating code that integrates external API calls while considering rate limiting.",
+          "Generating code that includes robust error handling for API failures.",
+          "Generating modular code that supports easy configuration and updates."
+        ],
+        "failure_reason": "The Code Assist-generated code provides no implementation at all (empty output), which suggests either a complete inability to process the user's request or an error in the response. The user included detailed requirements, but none were addressed.",
+        "actionable_insights": "Enhance augmentation scenarios to support detailed code-generation tasks with complex requirements. Introduce fine-tuned models or embeddings designed to process and align with intricate, multi-faceted prompts.",
+        "potential_gaps": "There is a significant lack of capability to process intricate, layered prompts for complex systems. This suggests that the model struggles with understanding or implementing highly specific requirements.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Detecting length variation failures during code examples for large input prompts.",
+          "Ensuring the generated code aligns meaningfully with the provided prompt.",
+          "Testing responses for different levels of prompt complexity and verifying content presence.",
+          "Auditing scenarios where the model may produce empty or incomplete outputs.",
+          "Testing code outputs against expected patterns for basic and complex prompts."
+        ],
+        "failure_reason": "Both Code Assist-generated code and expected code are empty, leading to no difference in length or content changes.",
+        "actionable_insights": "Include test scenarios that detect and debug cases where code generation outputs empty results. Incorporate augmentation types that mimic complex real-world instructions to test code-output completeness.",
+        "potential_gaps": "Absence of validation for empty output scenarios in code generation tasks. This indicates the test set lacks robustness checks for similar failures.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Generating high-performance transaction processing systems with batch processing and API integrations.",
+          "Creating modular, maintainable code structures for extensible systems.",
+          "Handling API errors gracefully to ensure pipeline stability.",
+          "Optimizing memory usage for processing large JSONL datasets.",
+          "Integrating secure encryption for sensitive data storage in code outputs."
+        ],
+        "failure_reason": "The user prompt specifies intricate requirements for building a high-performance, secure transaction system, yet the generated code is completely absent, failing to meet any prompt requirements.",
+        "actionable_insights": "Develop specialized augmentations tailored to complex, system-level prompts. Ensure the model is capable of interpreting and implementing detailed, task-specific workflows.",
+        "potential_gaps": "Lack of alignment between generated code and user requirements for complex, system-level tasks. This reveals a deficiency in handling prompts requiring multi-step or modular implementations.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c725427e60027de4429e"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 20,
+        "segments": [
+          {
+            "color": "#4c4e75",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Ground Truth Similarity",
+        "totalPercentage": 20,
+        "segments": [
+          {
+            "color": "#14d647",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 20,
+        "segments": [
+          {
+            "color": "#513f7e",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 20,
+        "segments": [
+          {
+            "color": "#aa7c9b",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 20,
+        "segments": [
+          {
+            "color": "#87cb6b",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The Code Assist-generated code was completely empty with no implementation to match any of the directives provided in the user prompt. As a result, none of the instructions were addressed, resulting in a score of 0.",
+        "actionable_insights": "Implement a validation mechanism to ensure that the generated code includes basic structural and functional elements to match the directives in the user prompt. Add test cases that verify implementation for each directive step in isolation and in combination.",
+        "potential_gaps": "The augmentation lacks foundational checks for generating any implementation, leading to complete failure in fulfilling the user prompt.",
+        "example_scenarios": [
+          "Generate code for file parsing with specified input/output validation.",
+          "Generate database handling code with encryption.",
+          "Generate API call handling code with error logging and retry logic.",
+          "Generate memory monitoring scripts for large data processing steps.",
+          "Generate asynchronous processing code tailored to the user prompt directives."
+        ],
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "Since both the generated code and the expected code were empty arrays, there were no blocks of code present to analyze for similarity or differences.",
+        "actionable_insights": "Ensure that test cases specify expected outputs for all inputs. Add augmentation checks to ensure at least a default implementation or stub code is generated even if conditions are ambiguous.",
+        "potential_gaps": "No guidance provided for generating baseline outputs to ensure comparability. The system fails when both the expected and generated outputs are empty.",
+        "example_scenarios": [
+          "Generate default scaffolding code for input parsing.",
+          "Generate stubs for encryption handling when prompts do not specify details.",
+          "Generate placeholder functions for API handling when directives are ambiguous.",
+          "Generate sample code for database connection stubs.",
+          "Generate log mechanisms even when other specific behaviors are undefined."
+        ],
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The generated prompt captures the overall structure and key requirements but lacks the specific details from the user prompt, such as retry logic, batch database operations, and detailed monitoring tools.",
+        "actionable_insights": "Enhance the prompt inference process to preserve all granular details from user directives. Incorporate test cases emphasizing key steps like batch insert logic, retry mechanisms, and memory profiling to improve similarity analysis.",
+        "potential_gaps": "Loss of specific instruction details during inference leads to reduced similarity of generated prompts to the ground truth directive.",
+        "example_scenarios": [
+          "Generate prompts that include exponential backoff for retry logic.",
+          "Generate prompts with clear instructions for batch database operations.",
+          "Include detailed monitoring tools like explicit memory profiling mechanisms.",
+          "Preserve user-specified encryption library details in prompts.",
+          "Generate exact step-by-step prompts matching the original input directives."
+        ],
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "Both Code Assist Generated Code and Expected Code are empty, resulting in no variation in code length.",
+        "actionable_insights": "Introduce test data that emphasizes non-trivial variations in expected outputs. Ensure that even minimal scaffolding or default implementations create acceptable variations to analyze.",
+        "potential_gaps": "Test data does not enforce code generation or length variation requirements, leading to ineffective testing for meaningful output.",
+        "example_scenarios": [
+          "Generate unique code for input validation scenarios.",
+          "Generate differing implementations for encryption functions.",
+          "Capture variations in API call handling logic by introducing new arguments or conditions.",
+          "Include diverse database schema handling in generated code.",
+          "Create variations in logging approaches for testing completeness."
+        ],
+        "priority": "Low"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The Code Assist-generated code fails to implement any of the functional requirements outlined in the user prompt. None of the specified steps, including file parsing, validation, grouping, encryption, asynchronous processing, or database handling, are addressed.",
+        "actionable_insights": "Validate generated code for adherence to key functional requirements. Introduce test cases requiring distinct implementations for essential directives like parsing, validation, encryption, and database handling.",
+        "potential_gaps": "The augmentation does not enforce basic functional coverage checks, leading to unimplemented outputs.",
+        "example_scenarios": [
+          "Ensure generated code includes file parsing and validation functionalities.",
+          "Test cases explicitly requiring asynchronous API calls with retry logic.",
+          "Test for integration of encryption steps in data persistence workflows.",
+          "Include explicit database handling requirements in test prompts.",
+          "Ensure memory profiling and performance monitoring functionalities are covered."
+        ],
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c74f427e60027de442ac"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#69733b",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#ba66af",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#1f9d7f",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "A user requests a Python script with multi-step requirements, including data processing, encryption, and API calls, without explicit directive phrases.",
+          "A user provides a vague description of a desired functionality without step-by-step instructions or highlighted goals.",
+          "A software developer asks for a generalized solution for handling transactions without focusing on output expectations.",
+          "A prompt outlining complex requirements lacks clear directives like 'Ensure that' or 'Make sure to.'",
+          "A request for a Python script involving multiple functionalities is presented as a high-level concept with missing task breakdown."
+        ],
+        "failure_reason": "The user prompt does not contain any directive phrases such as 'Ensure that,' 'Make sure to,' or 'Do not.' It primarily provides a general description of the desired functionality for the Python script without specifically outlining explicit instructions. As such, no explicit directives can be extracted or evaluated in the context of the given task.",
+        "actionable_insights": "Introduce directive-based rephrasing or prompt augmentation to ensure that user requirements are expressed with explicit instructions. Generate scenarios where the system is tested with both directive and non-directive inputs to improve robustness in identifying instructions.",
+        "potential_gaps": "Lack of test cases containing clear directive phrases or contrasting examples of directive and non-directive formats may hinder the system's ability to comprehend and process user instructions.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Comparing outputs of a code generation system with drastically different code lengths for a simple task.",
+          "Testing scenarios where the complexity of the input is not proportional to the expected code length.",
+          "Evaluating cases where code outputs are minimal or empty despite clear user inputs.",
+          "A complex problem requiring a multi-step Python script produces no code or uniform length comparisons.",
+          "Situations where coding tasks fail to generate any output, leading to unmeasurable code length variations."
+        ],
+        "failure_reason": "Both the Code Assist Generated Code and Expected Code are empty. Hence, there is no variation in code length.",
+        "actionable_insights": "Develop test cases with varying levels of code complexity and length. Include scenarios where the output is intentionally left empty to assess edge cases and ensure meaningful length variation.",
+        "potential_gaps": "Absence of complex and simple tasks with clear expected outputs makes it difficult to evaluate the system's ability to produce outputs with meaningful variation in code length.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "A detailed user prompt describing a multi-functional script results in incomplete or empty output.",
+          "A high-complexity code generation task yields no initial or partial functionality.",
+          "Testing cases where incomplete understanding of multi-step prompts leads to empty responses.",
+          "Requests for highly specific deliverables (e.g., encrypted databases, API integrations) result in no progress toward achieving the goal.",
+          "Reproducing unattended or unfulfilled tasks in automation scenarios for similar requests."
+        ],
+        "failure_reason": "The prompt outlines a complex and feature-rich set of requirements, but the Code Assist-generated code is entirely empty, containing no functionality or even preliminary structure to address the user's request. As a result, the goal of the prompt is entirely unmet.",
+        "actionable_insights": "Include augmentations that test the system's ability to generate partial or intermediate outputs when full functionality cannot be produced. Add scenarios with layered problem-solving steps to test comprehensiveness.",
+        "potential_gaps": "Limited coverage of scenarios for systems producing intermediate code outputs when full solutions are not feasible. Test data does not appear to challenge the incremental development capability of the system.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c77c427e60027de442ba"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#61014c",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#65b117",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#2102f0",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The Code Assist-generated code is missing entirely (empty output). Since no code was provided to validate against the prompt instructions, no directive phrases could be implemented or verified, resulting in a score of 0.",
+        "actionable_insights": "Focus on ensuring the test cases include scenarios that compel the system to produce concrete output. Augmentations simulating partial or incomplete instruction handling should be added to test robustness against unclear scenarios and force code generation.",
+        "potential_gaps": "The system is unable to process or interpret detailed and complex instructions, leading to no generated output.",
+        "example_scenarios": [
+          "Request a Python script to process JSONL files with partial instruction details, like only mentioning the need for encryption without specifying SQLite.",
+          "Create a scenario where only API integration is described, without the surrounding need for asynchronous processing or error handling.",
+          "Develop a test where data categorization by user and date is the sole requirement provided.",
+          "Simulate a conversation where only performance optimization is requested, without details on transaction handling.",
+          "Generate a case requiring asynchronous operation but vague details on file formats."
+        ],
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "Both Code Assist Generated Code and Expected Code are empty, resulting in identical code lengths and no differences.",
+        "actionable_insights": "Introduce augmentations ensuring the system generates output even if some instructions are incomplete. Design tests that probe response generation when requirements are ambiguous or minimal.",
+        "potential_gaps": "System does not generate any output when the expected data or response is lacking or unclear, causing a failure in minimum engagement with the prompt.",
+        "example_scenarios": [
+          "Create a scenario with a partially specified task, such as processing JSONL files but without mentioning the encryption requirements.",
+          "Simulate a conversation where the user only asks for fraud detection API integration without mentioning other processing details.",
+          "Test with a conversation focusing solely on asynchronous operations without mentioning performance requirements.",
+          "Request a simple categorization function, excluding the need for database storage or encryption specifications.",
+          "Provide instructions for transaction data grouping without mentioning grouping criteria like user or date."
+        ],
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The generated code is entirely empty and does not address any of the requirements outlined in the user prompt. The solution does not meet any functional checkpoints, such as handling large JSONL files, asynchronous processing, API integration for fraud detection, transaction categorization, encrypted SQLite storage, or performance optimization. This leads to a completely failing score of 0.0.",
+        "actionable_insights": "Create granular and individually focused test cases targeting each functional requirement. Systematically validate code generation for key functionalities (e.g., JSONL processing, API call handling, etc.) in isolation and then in combination.",
+        "potential_gaps": "The system fails to address compound or multi-faceted requirements, suggesting a lack of modular verification or capability to integrate multiple tasks effectively.",
+        "example_scenarios": [
+          "Request a script solely focused on handling large JSONL files.",
+          "Simulate a need for asynchronous API calls without additional requirements.",
+          "Test instruction-following capabilities when the focus is only on encrypting SQLite database results.",
+          "Develop a prompt requiring just transaction categorization by user and date, excluding all other functions.",
+          "Introduce a requirement for performance optimization with a minimalistic task that involves no file or API handling."
+        ],
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c7a0427e60027de442c8"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#cf93c6",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#6b47a3",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#096811",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#1ec567",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "failures_analysis": [
+          {
+            "augmentation_type": "Unknown",
+            "example_scenarios": [
+              "A prompt requesting a Python script to process high-volume transactions asynchronously.",
+              "A task requiring grouping transactions by user and date while keeping memory usage minimal.",
+              "A case involving API failure resilience while performing fraud checks.",
+              "A scenario involving encryption of transaction results in an SQLite database.",
+              "A condition requiring efficient handling of large JSONL files with multiple directives."
+            ],
+            "failure_reason": "The user prompt outlined multiple clear directives on handling transactions efficiently, processing asynchronously, managing memory usage, handling API failures, and encrypting data in SQLite. However, no code was generated by Code Assist to satisfy any of the instructions, resulting in a score of 0.",
+            "actionable_insights": "Test data lacks examples of user prompts containing highly specific, multi-step instructions. Generate new test cases involving detailed, multi-stage commands to ensure proper handling of complex directives.",
+            "potential_gaps": "The system was unable to process and execute user requests involving multi-step instructions due to insufficient training or lack of contextual awareness for such scenarios.",
+            "priority": "High"
+          },
+          {
+            "augmentation_type": "Unknown",
+            "example_scenarios": [
+              "Commands requiring reverse engineering of an incomplete or empty Python script.",
+              "Requests specifying high-priority tasks like fraud detection integrated with script execution.",
+              "User instructions for asynchronously managing API calls while ensuring no dropped requests.",
+              "Requirements to store and encrypt grouped transaction data in SQLite.",
+              "Handling robust error-checking functionalities in script execution."
+            ],
+            "failure_reason": "The user provides a highly detailed and specific prompt requesting a Python script for processing large transaction files asynchronously, checking for fraud, grouping transactions, encrypting results in SQLite while handling API failures resiliently with high efficiency. However, the `Code assist-generated code` is completely blank (`[]`), indicating no attempt to address or align with the user’s request. Without any generated code to analyze, alignment cannot be demonstrated, thus resulting in a score of 0.",
+            "actionable_insights": "Introduce test cases with partial or intermediate solutions to check the system’s ability to reverse-engineer and resolve discrepancies. Ensure the model is trained on a diverse set of incomplete script repair tasks.",
+            "potential_gaps": "The system struggles to align output with specific, highly technical user demands, highlighting a deficiency in its ability to effectively interpret and resolve complex input-output dependence.",
+            "priority": "High"
+          },
+          {
+            "augmentation_type": "Unknown",
+            "example_scenarios": [
+              "Comparing code snippets for compliance with user-provided instructions.",
+              "Providing solutions with consistent and measurable code length based on requirements.",
+              "Handling large-scale scripts involving asynchronous processing and efficient memory management.",
+              "Testing extreme cases of missing code with expected generated output.",
+              "Scenarios where small variations in code length can impact goal accuracy for transaction processing."
+            ],
+            "failure_reason": "Both the Code Assist Generated Code and the Expected Code are empty arrays with no lines. Therefore, the comparison yields no differences.",
+            "actionable_insights": "Account for edge cases where no response is generated. Introduce augmentation scenarios simulating these extreme cases to ensure the model consistently produces meaningful outputs, even in minimal or null conditions.",
+            "potential_gaps": "Test data does not address scenarios that explicitly manage null or empty outputs, leaving the system unable to respond robustly in such situations.",
+            "priority": "Medium"
+          },
+          {
+            "augmentation_type": "Unknown",
+            "example_scenarios": [
+              "Requests with clearly defined goals such as processing JSONL files for fraud identification.",
+              "User input demanding multipoint resolutions like data grouping and output encryption.",
+              "Prompts testing the interaction of memory optimization and error resilience.",
+              "Real-world scenarios involving high-priority tasks with asynchronous API handling.",
+              "Testing the model’s ability to address end-to-end workflows with specified outcomes."
+            ],
+            "failure_reason": "The Code Assist-generated code does not implement any functionality requested in the user prompt. The provided script is entirely empty ('[]'), and therefore, it fails to meet even a single requirement, such as processing JSONL files, performing asynchronous operations, handling API failures, grouping transactions by user and date, saving an encrypted SQLite database, or ensuring memory efficiency. This complete lack of implementation results in a score of 0.",
+            "actionable_insights": "Develop scenarios where multiple user directives are combined, ensuring their proper execution end-to-end. Include robustness checks to guarantee the system delivers at least partial solutions under such circumstances.",
+            "potential_gaps": "The current test set may not include enough relevant data to train the system for achieving goal-oriented outputs in complex, multi-part scenarios.",
+            "priority": "High"
+          }
+        ]
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c7cb427e60027de442d6"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#4de52c",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#584e2b",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#e777cb",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "A call conversation where the user provides explicit directives using terms like 'Should', 'Ensure that', or 'Provide instructions'.",
+          "Testing variations of customer instructions, ensuring clarity in steps or outcomes.",
+          "Call scenarios where users employ ambiguous phrasing but still expect actionable steps.",
+          "Interactions where users give commands with implied actions but lack formal directive words.",
+          "Conversations that mix instructional tones with descriptive feedback."
+        ],
+        "failure_reason": "The user prompt mentions fixing intermittent errors in a script during requests but does not contain explicit directive phrases like 'Should', 'Ensure that', or other instructional-level expressions. Therefore, there are no instructions to evaluate, and the code implementation is empty.",
+        "actionable_insights": "Enhance the test data with explicit instructional examples to ensure directive phrases are evaluated for both clarity and intent. Include diverse phrasings of instructions that range from explicit to implicit to test system adaptability.",
+        "potential_gaps": "The system lacks robustness in handling vague or non-directive phrases. It struggles when users provide feedback without structured actionability.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Testing calls where users provide multiple versions of similar instructions, focusing on resolving specific errors.",
+          "A scenario where the user describes a common issue in code but omits explicit implementation details.",
+          "Conversations in which users repeat similar issues but with nuanced phrasing to check for prompt similarity matching.",
+          "Calls that describe fixing code problems but without specifying libraries or technical frameworks explicitly.",
+          "Situations where the user uses descriptive, verbose language while expecting concise code fixes."
+        ],
+        "failure_reason": "The provided user prompts all request a fix for intermittent errors occurring during requests made by the script. The inferred prompt aligns well in terms of intent and specificity, as it directly addresses the core issue of handling request errors using the 'requests' library. However, there is minor divergence, with the generated prompt being more concise and generalized compared to the user's varied phrasing.",
+        "actionable_insights": "Incorporate augmentation scenarios that vary in phrasing and contextual nuances while expressing the same intent. Standardize evaluation measures to account for both concise and verbose prompts, ensuring alignment in intent.",
+        "potential_gaps": "Limited ability to handle varied phrasings and slight differences in specificity across user prompts. Difficulty in aligning diverse inputs with generalized resolutions.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Scenarios comparing generated and expected code outputs with significant differences in code length.",
+          "Test cases with multiline commands and variations in formatting, such as indentation differences.",
+          "Situations where generated code introduces or omits functions that alter the expected behavior.",
+          "Conversations where the user expects longer, detailed code snippets but receives concise outputs.",
+          "Cases where the generated code does not account for essential error handling routines mentioned in the user instruction."
+        ],
+        "failure_reason": "The system appears unable to provide proper templates or comparisons for analyzing the Code Assist Generated Code and Expected Code. There is no concrete test data available to validate the Code Length Variation Index.",
+        "actionable_insights": "Generate test datasets with varied code outputs that encompass both concise and verbose styles. Emphasize structure and consistency evaluation within the test cases.",
+        "potential_gaps": "Lack of comprehensive test cases that incorporate code length variations and contextual code comparison. Absence of predefined templates or benchmarks to evaluate generated outputs effectively.",
+        "priority": "Low"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c804427e60027de442e4"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#433282",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Ground Truth Similarity",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#387d20",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#2b1572",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#857425",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "scenario": "A customer requests a detailed investigation into HTTP errors in deployed code and includes an example of required error handling."
+          },
+          {
+            "scenario": "A complex customer query involving edge-case handling, with instructions for code implementation."
+          },
+          {
+            "scenario": "A prompt requiring actionable steps for improving robustness in API interaction code."
+          },
+          {
+            "scenario": "A troubleshooting request where the focus is on runtime error prevention."
+          },
+          {
+            "scenario": "A customer describing a situation of intermittent HTTP request failures and asking for root cause analysis."
+          }
+        ],
+        "failure_reason": "The user prompt provides detailed instructions regarding ensuring consistent functionality, implementing error handling, and creating a robust, thoroughly tested implementation. However, the Code Assist-generated code output is empty, failing to address any of the specified directives.",
+        "actionable_insights": "Develop specific augmentations focusing on detailed prompt resolution scenarios. Add targeted augmentations that test system capabilities to process step-by-step instructional content and generate actionable outputs.",
+        "potential_gaps": "Lack of coverage for scenarios requiring multi-step resolution and instructional compliance. Limited robustness in interpreting detailed prompts or generating code meeting specific directives.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "scenario": "Comparing a generated code snippet to expected output, where both inputs are empty."
+          },
+          {
+            "scenario": "Classifying code similarity but unable to parse outputs with no content."
+          },
+          {
+            "scenario": "Evaluation of non-existent or erroneous outputs against accurate ground truth data."
+          },
+          {
+            "scenario": "Testing coverage for empty code structures but expecting robust evaluation."
+          },
+          {
+            "scenario": "Verifying system behavior when critical comparison metrics are rendered irrelevant due to missing outputs."
+          }
+        ],
+        "failure_reason": "Both the generated and expected code are empty, causing the system to default to perfect similarity (score = 1) without meaningful evaluation. This exposes gaps in assessing scenarios with no content.",
+        "actionable_insights": "Introduce code generation augmentations that actively produce outputs correlated with the expected code structure. Include test cases with a variety of non-empty expected outputs to ensure meaningful evaluation.",
+        "potential_gaps": "Missing logical outputs from the augmentation indicate the absence of code force-generation scenarios. Limited data scenarios covering common cases where similarity requires actual outputs.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "scenario": "A prompt to fix bug-prone code using reverse engineering techniques, which failed to generate any meaningful output."
+          },
+          {
+            "scenario": "Scenarios requiring a match between explicit prompts for code fixes and system-generated solutions."
+          },
+          {
+            "scenario": "Edge-case scenarios where generated code must meet a specific inferred prompt."
+          },
+          {
+            "scenario": "Handling of explicit debugging instructions that align closely with user specifications."
+          },
+          {
+            "scenario": "Requiring augmentation scenarios testing the ability to adapt code to explicit functional directives."
+          }
+        ],
+        "failure_reason": "The system failed to produce any output for a prompt requiring explicit error handling for HTTP requests, resulting in failure to align with the inferred code fix intentions.",
+        "actionable_insights": "Introduce augmentations that simulate user prompts requiring explicit bug-fixing techniques. Focus on incorporating instructional prompts with clear directives such as edge-case handling and robustness adherence.",
+        "potential_gaps": "No capacity to generate or infer bug-fixing code based on explicit user input. Absence of test cases targeting functionality-oriented augmentation alignment.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "scenario": "Comparing code files for line variations when both provided inputs are empty."
+          },
+          {
+            "scenario": "Edge case testing where instruction outputs result in zero variation or presence of results."
+          },
+          {
+            "scenario": "Measuring code length in scenarios where generated content did not meet prompt expectations."
+          },
+          {
+            "scenario": "Evaluating system preparedness for handling missing or empty outputs."
+          },
+          {
+            "scenario": "Attempts to validate augmentation impact on file length differences between outputs and ground truth."
+          }
+        ],
+        "failure_reason": "Both the Code Assist Generated Code and Expected Code are empty, resulting in no lines for comparison. The generated output fails to address improvements or align with user directives, producing no effective augmentation benefits.",
+        "actionable_insights": "Incorporate length-specific augmentation strategies that attempt to force variation or generate content. Build augmentation sets aimed at ensuring output-content sufficiency even in edge-case comparison scenarios.",
+        "potential_gaps": "Inability to handle instructions that should modify or generate code from templates. Absence of test data prompting forced code length variation.",
+        "priority": "Medium"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c835427e60027de442f2"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#949351",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#39f314",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#58886f",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The prompt provided a set of 12 step-by-step instructions to investigate and resolve script failures. However, the Code Assist-generated code was empty, so none of the instructions were implemented.",
+        "actionable_insights": "Focus on augmentations to improve instruction-following capabilities in the AI system. Specifically test cases with detailed, multi-step procedures to ensure successful implementation.",
+        "potential_gaps": "Lack of test data with diverse and complex multi-step instructions, potentially causing the system to fail when handling instruction-heavy prompts.",
+        "example_scenarios": [
+          "A user provides a detailed process to troubleshoot a server issue that needs exact adherence to steps.",
+          "A customer asks for a 10-step recipe to be implemented in sequence.",
+          "A call script involves a multi-step onboarding process for new customers.",
+          "Debugging procedures with step-by-step instructions for software recovery.",
+          "User manuals containing pages that need to generate structured compliance actions."
+        ],
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The actual user prompt is highly detailed and lays out a sequential process for debugging the script and ensuring its functionality. The inferred prompt, while touching upon general debugging and error handling aspects, does not reflect the comprehensive set of actions or the level of detail provided in the user prompt. The missing precision (specific steps and checks) and the lack of context (reproducing errors consistently, testing, and documenting changes) account for the lower similarity score.",
+        "actionable_insights": "Improve augmentation data to include prompts with explicit user-driven step-by-step processes and ensure the system correctly understands and mirrors all provided details.",
+        "potential_gaps": "Insufficient training for prompts that outline detailed workflows and require maintaining precision and context alignment.",
+        "example_scenarios": [
+          "Creating a troubleshooting guide based on precise triggers and dependencies.",
+          "Generating a custom workflow for integrating two software tools.",
+          "Providing sequential instructions for setting up a new device.",
+          "Designing an exact step sequence for onboarding employees to a software platform.",
+          "Mirroring user queries such as financial transaction history audits with specific checks."
+        ],
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "Here is the JSON output when both the Code Assist Generated Code and Expected Code are empty (as per the placeholders you provided): Both the Code Assist Generated Code and Expected Code are empty, so there are no differences in the number of lines or content.",
+        "actionable_insights": "Develop augmentations that test for edge cases such as empty inputs, incomplete data, and uninformative scenarios, ensuring the system gives meaningful feedback and graceful handling of missing inputs.",
+        "potential_gaps": "Undertested edge cases like empty or zero-value placeholders, which may result in unhandled scenarios or unhelpful outputs.",
+        "example_scenarios": [
+          "Handling an empty list of inventory items in a warehouse query.",
+          "Processing a support ticket with no user-provided details.",
+          "Receiving an empty user query and delivering an appropriate response.",
+          "Dealing with undefined code in software configurations or incomplete scripts.",
+          "Executing database queries where referenced tables or fields are undefined or empty."
+        ],
+        "priority": "Medium"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c859427e60027de44300"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 50,
+        "segments": [
+          {
+            "color": "#a6abd4",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 50,
+        "segments": [
+          {
+            "color": "#619c65",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "A call conversation where the customer explicitly provides a directive such as 'Ensure that you only book flights with premium seating'.",
+          "A scenario where the customer provides step-by-step instructions like 'First, check the flights for tomorrow, then filter by non-stop options'.",
+          "A situation where a customer requests 'Do not book hotels in areas with poor reviews'.",
+          "A case where a customer provides clear instructions like 'Ensure that the booking confirmation includes my name spelled correctly'.",
+          "A call where a customer explicitly states 'Do not proceed with any booking unless I approve it via email'."
+        ],
+        "failure_reason": "The prompt does not include any directive phrases that indicate explicit instructions, such as 'Ensure that' or 'Do not.' Since there are no instructions in the prompt and the provided code is empty, no evaluation of implementation can be performed.",
+        "actionable_insights": "Include more test cases that explicitly test directive or instructional language to ensure the system can handle and respond accurately. Add directives like 'Ensure', 'Do not', 'Always', and step-by-step instructions to cover gaps in instructional handling.",
+        "potential_gaps": "Lack of directive-oriented prompts in the test data, leading to an inability to evaluate instruction comprehension. Lack of scenarios to test multi-step directives or conditional instructions.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Evaluation with a prompt that generates short code snippets versus one requiring extensive multi-step outputs.",
+          "Testing code generation for a customer who requests a small modification to a travel itinerary versus creating an itinerary from scratch.",
+          "Scenario with an explicit instruction to modify an existing entity and compare the expected output.",
+          "A case where multiple small tasks are performed sequentially to test code generation length variation.",
+          "A customer request generating a simple 'yes' or 'no' booking response versus a detailed explanation of charges and policies."
+        ],
+        "failure_reason": "Both the Code Assist Generated Code and Expected Code are empty. Therefore, there is no variation in code length or content.",
+        "actionable_insights": "Introduce scenarios where the system is evaluated on code length variation, such as short tasks (e.g., editing one attribute of a booking) versus complex tasks (e.g., generating detailed itineraries).",
+        "potential_gaps": "Absence of scenarios to test the system’s handling of varied task complexities, leading to issues in evaluating code length and content variability.",
+        "priority": "Medium"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c87d427e60027de4430e"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 50,
+        "segments": [
+          {
+            "color": "#a12222",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 50,
+        "segments": [
+          {
+            "color": "#c33132",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Generate conversational data where the system must transform instructions into code snippets, ensuring code completion.",
+          "Create varying levels of instruction complexity to see if code generation handles both simple and complex prompts.",
+          "Test edge cases where the system must respond to incomplete or ambiguous queries.",
+          "Introduce scenarios where the system must generate code with external data source integrations.",
+          "Test scenarios involving repetitive tasks with minor variations to evaluate instruction adherence."
+        ],
+        "failure_reason": [
+          "The Code Assist-generated code is completely missing since it returned an empty list ([]).",
+          "Both Code Assist Generated Code and Expected Code are empty, resulting in no variation in code length."
+        ],
+        "actionable_insights": [
+          "Enhance the dataset with diverse and explicit code instruction examples to improve instruction handling.",
+          "Incorporate examples that involve variable code length to address issues with length variation.",
+          "Simulate real-world scenarios where code generation requires step-by-step directives.",
+          "Include prompts with detailed and incomplete instructions to make the model more robust.",
+          "Introduce negative scenarios where vague directives test the limits of instruction adherence."
+        ],
+        "potential_gaps": [
+          "Lack of diverse examples in test data for instruction handling.",
+          "Insufficient complexity in prompts to test the system's ability to generate varied code.",
+          "Absence of scenarios that test the system's ability to handle ambiguous or incomplete instructions.",
+          "Limited scenarios addressing code length variation criteria.",
+          "No edge case coverage involving multilayered or nested instructions."
+        ],
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c8a8427e60027de4431c"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#ee3cf9",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#01c7e0",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#44cc30",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "description": "Conversation without any directive phrases like 'Ensure that' or 'Make sure to', focusing entirely on vague or incomplete prompts.",
+            "call_conversation": "Fix script please. No further explanation provided."
+          },
+          {
+            "description": "Call where the user provides insufficient input, resulting in both generated and expected outputs being empty.",
+            "call_conversation": "Script error - please resolve."
+          },
+          {
+            "description": "Conversation where user expects meaningful fixes but provides unclear or repetitive input.",
+            "call_conversation": "Fix this issue time time time issue error."
+          },
+          {
+            "description": "Completely ambiguous input from the user, leading to no actionable output.",
+            "call_conversation": "Help me solve this. End."
+          },
+          {
+            "description": "Prompt written without instructions, tone context, or clarity of issues to resolve.",
+            "call_conversation": "Please fix code issue. No directives about the solution provided."
+          }
+        ],
+        "failure_reason": [
+          "Lack of directive phrases in the input, leaving no instructions for the system to follow.",
+          "Empty generated code and expected code due to insufficient or unclear user input.",
+          "Completely failing to address user goals because of unclear or repetitive inputs in the prompt."
+        ],
+        "actionable_insights": [
+          "Incorporate augmentation scenarios that involve clear directive phrases such as 'Ensure that', 'Make sure to', or 'Fix this issue by doing X' to help the system understand user intentions.",
+          "Augment test data with prompts that include both detailed user instructions and more comprehensive context about the problem requiring resolution.",
+          "Test the system's ability to handle vague or ambiguous input by introducing such prompts explicitly into the test data.",
+          "Incorporate a validation step to verify the presence of actionable directives and ensure their clarity before processing user prompts.",
+          "Train the system to handle redundancy in inputs by identifying key semantic points and reducing repetitive information."
+        ],
+        "potential_gaps": [
+          "Lack of directive-specific prompts in test data to model user instructions effectively.",
+          "Test scenarios are not sufficiently diverse to simulate vague and ambiguous user inputs.",
+          "No mechanisms to address or recover from incomplete or repetitive user input.",
+          "Failure to introduce a balance between detailed, instructional inputs and more casual, real-world prompts in test scenarios."
+        ],
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c8f4427e60027de44337"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#63f954",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#7c461c",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#895427",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The Code Assist-generated code does not include any implementation. Therefore, none of the detailed instructions from the prompt could be met. As a result, a score of 0.0 was assigned.",
+        "actionable_insights": "Focus on creating augmentations that ensure the system properly generates functional, implementation-ready code. Investigate the system's ability to break down complex prompts into actionable steps.",
+        "potential_gaps": "Lack of ability to translate detailed instructions into implementation-ready code.",
+        "example_scenarios": [
+          "Generate the overridden method with base class logic reuse as described in the instruction.",
+          "Incorporate exception handling rules provided in the prompt into the generated code.",
+          "Produce a clean and efficient implementation while adhering strictly to the constraints of not adding redundant computations.",
+          "Document the overridden method to explain the extension of base functionality properly.",
+          "Generate a complete unit test ensuring the subclass respects the base class behavior."
+        ],
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "If both `Code Assist Generated Code` and `Expected Code` are empty lists (`[]`), the difference in code length equals zero. The generated output lacks actionable content to compare with the expected outcome.",
+        "actionable_insights": "Create augmentations targeting scenarios with varied code lengths and complexity levels to evaluate how well the system adapts. Ensure the system does not return empty results regardless of input complexity.",
+        "potential_gaps": "Inability to respond to prompts with functional code structures when dealing with varied expected code lengths or structures.",
+        "example_scenarios": [
+          "Generate full implementation when given a simple prompt requiring base class method reuse.",
+          "Handle large prompts specifying complex multi-step requirements like unit tests and exception handling.",
+          "Respond robustly to edge-case prompts with minimal but precise requirements.",
+          "Produce code both for short (single-line) and long, multi-step instructions to detect inconsistencies.",
+          "Assess performance when multiple solutions or methods are required for the same functionality."
+        ],
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The generated code is entirely absent, failing to meet any of the requirements specified in the prompt. This lack of implementation significantly lowers the score as the prompt's explicit goals, including overriding the method, clean extension, exception handling, and including unit tests, are not addressed.",
+        "actionable_insights": "Augment the system with embeddings or models that parse long-text prompts into actionable tasks for code generation. Generate augmentations that validate whether each component of the prompt (method overriding, exception handling, unit tests) is met in the output.",
+        "potential_gaps": "Failure to decompose long-text instructions into components and execute them effectively.",
+        "example_scenarios": [
+          "Break down a long prompt into smaller subtasks and implement each part individually.",
+          "Address specific requirements like exception handling in isolation and integrate them into the final code.",
+          "Automatically add documentation for the subclass with details on the method extension process.",
+          "Validate the generated code for compliance with all provided constraints (e.g., reusing base class logic).",
+          "Ensure the system can identify and execute implicit goals, like providing unit tests for functionality verification."
+        ],
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c91e427e60027de44345"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#7eb2a8",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#5f2a9f",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#63fba7",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "None of the instructions provided in the prompt were followed or met due to the absence of code implementation, resulting in a score of 0.0.",
+        "actionable_insights": "Develop and test code generation augmentations for handling multistep prompts by ensuring implementation of key instructions is prioritized during testing. Include methods for evaluating the presence and correctness of essential programming elements such as function signatures and method calls.",
+        "potential_gaps": "The test data lacks coverage for scenarios where partial or complete code implementation is missing. There is no validation mechanism to ensure all steps of the instructions are executed correctly.",
+        "example_scenarios": [
+          "Providing a scenario where instructions are followed partially, such as the signature being correct but no method implementation.",
+          "Testing augmented conversations where incorrect method names or signatures are intentionally generated to validate error handling.",
+          "Implementing background noise or context switches within a conversation to test system robustness in following detailed prompts.",
+          "Simulating customer interruptions or clarifications during instruction-giving to ensure accurate step-by-step execution.",
+          "Introducing variability in vocabulary or synonyms related to technical terms to check the adaptability of the code generation to follow original intent."
+        ],
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "Both Code Assist Generated Code and Expected Code are empty, resulting in no variation in code length.",
+        "actionable_insights": "Expand augmentations to include scenarios with varying levels of implementation complexity, ensuring comparisons of code length variations in both complete and incomplete generated code outputs.",
+        "potential_gaps": "The test data does not sufficiently represent edge cases where one or both outputs are empty. There is no system validation for proper output generation under these conditions.",
+        "example_scenarios": [
+          "Providing partially implemented code and evaluating the generated output for completeness and length.",
+          "Testing scenarios where syntax errors or missing libraries cause the generated code to fail during the testing process.",
+          "Simulating cases of overly verbose or unnecessarily concise responses to check for appropriate code length and relevance.",
+          "Introducing challenges such as added or missing logic steps in the prompt and testing if the system produces valid code safeguards.",
+          "Ensuring that the system handles edge cases such as no input code and still generates a meaningful response."
+        ],
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "failure_reason": "The Code Assist-generated code is completely empty, failing to address even a single step from the user prompt, resulting in a score of 0.",
+        "actionable_insights": "Establish better augmentation for prompts with detailed step-by-step instructions, paired with checks for implementation accuracy and handling of incomplete system output.",
+        "potential_gaps": "The test data lacks redundancy checks or fallback mechanisms for when generated outputs are null or incomplete. No safeguards for detailed step-based instruction failures.",
+        "example_scenarios": [
+          "Introducing augmented prompts that provide detailed instructions but include unnecessary or incorrect steps to test filtering logic.",
+          "Testing scenarios with missing instructions or unclear prompts to evaluate how gaps in detail are handled.",
+          "Evaluating system behavior with mixed-language prompts (e.g., partial instruction in one language and completion in another).",
+          "Creating variations in prompt structure—e.g., reordered instructions or segmented prompts split into different conversation turns.",
+          "Simulating interruptions or omissions in step-by-step instructions to assess the capability to infer and correct missing details."
+        ],
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c945427e60027de44353"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#b20efd",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Ground Truth Similarity",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#74617e",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#3ef7f7",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#192580",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Scenario involving a clear user prompt requiring a code override but the system generates no output.",
+          "Scenario where the customer specifies using base logic without alterations, but the system fails to comply or generate code.",
+          "Scenario with efficiency-focused instructions for code reuse, resulting in an empty output.",
+          "Scenario prompting a method override while avoiding redundancy, leading to no code implementation.",
+          "Scenario requiring optimization of code behavior but the system responds with no content."
+        ],
+        "failure_reason": "The Code Assist-generated code does not contain any implementation and is an empty list. None of the instructional directives in the user prompt were met, resulting in a perfect score of 0 for compliance.",
+        "actionable_insights": "Include targeted test cases for systems to handle user instructions related to code behavior and overrides. Test for scenarios where the system needs to generate functional code instead of empty outputs.",
+        "potential_gaps": "The system does not effectively understand or implement user-provided directives for code generation. Test data lacks specific augmentation to address empty output generation issues.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Scenario comparing an expected code snippet to generated output where both are empty.",
+          "Scenario with user directives but no ground truth or generated output for comparison.",
+          "Scenario requiring code correctness validation but resulting in no data points due to empty output.",
+          "Scenario emphasizing similarity with expected code yet the system produces no output.",
+          "Scenario focused on matching grounding logic but failing due to complete lack of implementation in both cases."
+        ],
+        "failure_reason": "Both the generated code and the expected code are empty, resulting in a complete lack of comparison data.",
+        "actionable_insights": "Ensure test data includes scenarios with non-empty expected outputs to challenge and evaluate system capabilities. Introduce augmentations to handle cases where the system fails to generate any output for comparison.",
+        "potential_gaps": "The system is not tested against diverse outputs that align with user expectations. Test data does not address edge cases where outputs may be entirely missing.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Scenario requiring a proportional length of generated code given user expectations, but both outputs are empty.",
+          "Scenario stressing minimal discrepancy in code length where no output data is present.",
+          "Scenario focused on aligning generated code content and length to user-specified requirements.",
+          "Scenario emphasizing variations in code structure but resulting in empty user and machine outputs.",
+          "Scenario involving user directives meant to produce measurable and similar code outputs, yet both outputs are empty."
+        ],
+        "failure_reason": "Both the Expected Code and Code Assist Generated Code are empty, resulting in no differences in code length or content.",
+        "actionable_insights": "Augment test data with varied length settings to evaluate the system's response to generating code. Add edge cases measuring content mismatch when one or both outputs are missing.",
+        "potential_gaps": "The current test data does not account for scenarios requiring significant differences in generated and expected code length.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Scenario requiring goal-driven outputs (e.g., method override) with no code produced.",
+          "Scenario where a generated code output is expected to meet function goals but is entirely empty.",
+          "Scenario stressing functional requirements met through generated code, but no implementation is returned.",
+          "Scenario involving system metrics validation against user goals when code generation fails completely.",
+          "Scenario testing directive-based goal accuracy where the system does not attempt to address the prompt."
+        ],
+        "failure_reason": "The Code Assist-generated code does not contain any code implementation, making it impossible to evaluate or achieve any of the goals specified in the user prompt. As a result, the score is significantly reduced to 0.",
+        "actionable_insights": "Enhance test scenarios with specific user goals and enforce output requirements. Ensure augmentations explicitly test for code generation tied to achieving directive-based outcomes.",
+        "potential_gaps": "Test data does not adequately evaluate system compliance with goal-driven user prompts when no output is generated.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c98d427e60027de4436e"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#f63267",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Ground Truth Similarity",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#e4f6cd",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#c94934",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#839adf",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "scenario": "A customer explicitly requests code modifications to a subclass while ensuring it inherits from the base class without altering its functionality or adding unnecessary features."
+          },
+          {
+            "scenario": "The user instructs the system to perform changes in a modular manner that adheres to existing implementation structure and conventions."
+          },
+          {
+            "scenario": "A scenario mimics user instructions for making minimal yet impactful changes, emphasizing simplicity and improved efficiency in the subclass."
+          },
+          {
+            "scenario": "A call where the user specifies constraints like avoiding unnecessary computations or redundancies during code augmentation."
+          },
+          {
+            "scenario": "The user provides detailed instructions in simplified or broken English but expects the system to correctly interpret and act upon the intent conveyed."
+          }
+        ],
+        "failure_reason": "The system consistently failed to generate or interpret the user-specified outputs due to a complete absence of implementation in the generated response, rendering it impossible to evaluate key metrics such as instruction handling, similarity to ground truth, code length variation, and goal accuracy.",
+        "actionable_insights": [
+          "Introduce augmentation tests involving instructions given in simplified language or non-standard formats, as these may reflect a real-world scenario where users do not always communicate formally.",
+          "Ensure the test data includes expected outputs with sufficiently detailed instructions to provide both guidance and context for the system's modeling.",
+          "Develop scenarios where the system is required to preserve or manipulate key relationships between base and subclass functionality to align with user requirements.",
+          "Incorporate scenarios where minimalistic or constraint-driven solutions are explicitly requested to test the system's ability to prioritize and deliver appropriately within boundaries.",
+          "Add scenarios that simulate incomplete or vague instructions to evaluate how well the system can infer user intent and context for code generation."
+        ],
+        "potential_gaps": [
+          "Lack of test cases handling user instructions written in non-standard or simplified English, which may lead to incorrect or null system responses.",
+          "No predefined user-provided examples in test data, causing ambiguity in comparing metric results such as ground truth similarity or goal accuracy.",
+          "Insufficient coverage of cases where functionality preservation and minimal impact on the base behavior were critical, signaling a potential inability of the system to meet complex user constraints.",
+          "Test data misses scenarios that deliberately push the system to interpret imprecise or indirect language, which is essential for robustness in real-world user interactions."
+        ],
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c9b4427e60027de4437c"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#fba136",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#6ba838",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#42d434",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#0d0cd9",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "User prompts a Python script for managing insurance data, including fields like name, policy number, premium, and sorting functionality.",
+          "Task requires creating code to sort insurance policyholder records alphabetically by their name field.",
+          "Prompt demands development of a program with unique reference generation for every insurance record.",
+          "User requests creation of a Python tool for displaying sorted insurance records in a readable format.",
+          "Requirement involves composing a script that handles both storage and retrieval of insurance data with sorting capability."
+        ],
+        "failure_reason": "The user prompts across all points contain directive phrases like 'Ensure that,' implicitly guiding the functionality of the script to include specific fields and implement sorting by name. However, the provided 'Code Assist-generated code' is empty and does not capture any implementation of these directives.",
+        "actionable_insights": "Enrich the test data with scenarios involving explicit templates for script implementation (e.g., include examples featuring sorted Python dictionaries). Add augmentations comprising various task complexities to evaluate instruction comprehension. Validate the code-template generation process under diverse linguistic command structures such as informal, formal, and technical directives.",
+        "potential_gaps": "Test data lacks support for ensuring adherence to directives in user prompts. Augmentation scenarios for detecting missing or incomplete implementations are not explored.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "User prompts code to manage insurance policies, request sorting functionality as a user input.",
+          "Task requires reverse evaluation for storing and displaying company insurance records in Python.",
+          "Provide code where policyholder premiums are validated for numeric formatting at runtime.",
+          "Develop a code script for adding and sorting by custom user-defined fields dynamically.",
+          "Validate pre-written auxiliary code that accepts records and builds sorted data tables."
+        ],
+        "failure_reason": "The Code Assist-generated code is empty ('[]'), which means no code was generated in response to the user-provided prompts. Without any generated code, it is impossible to infer a meaningful prompt or evaluate its alignment with the provided user prompts.",
+        "actionable_insights": "Augment the test data by incorporating reverse-engineered examples, such as comparing incomplete code snippets against expected tables or pseudo-code. Introduce robustness testing for scenarios requiring feedback generation from user prompts.",
+        "potential_gaps": "Test data does not include examples for reverse-engineering correctness evaluation. There is insufficient validation for alignment of generated code with prompt specifications.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "User-designed prompt asking for a Python tool to keep insurance policy records with fewer input details.",
+          "Task designed to test adaptability of scripts to varying input sizes for insurance data.",
+          "System exposed to partial user commands—e.g., only requesting sorting without field descriptions.",
+          "Include scenarios where the task demands multi-line comments to document code for functionality.",
+          "Validate length-variation of Code Assist-generated outputs for non-standard sorting schemes."
+        ],
+        "failure_reason": "Both the Code Assist-Generated Code and Expected Code are empty, resulting in no difference. Thus, the test scenario failed to capture differences in code length or content variation given the absence of code.",
+        "actionable_insights": "Broaden the augmentations to include testing of variable-length task requests, where code complexity increases (e.g., addition of multiple modules). Create scenarios emphasizing fallback mechanisms for incomplete command interpretations.",
+        "potential_gaps": "Important augmentation for analyzing code length variance is missing. Lack of scenarios describing modular and varying complexity levels in code generation.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Task requires fulfillment of constraints such as field definition and sorting in generated Python scripts.",
+          "User-provided prompt explicitly mentions unique ID generation alongside multi-parameter criteria for implementation.",
+          "System receives continuous feedback for iterative correction of generated scripts solving insurance management problems.",
+          "Inclusion of goals involving concatenating two independent Python commands to provide complete field listing.",
+          "Evaluate a scenario where generated code partially meets goals, e.g., missing sorting functionality."
+        ],
+        "failure_reason": "The Code Assist-generated code is completely empty and does not fulfill any of the requirements stated in the user prompt. The prompt specifically asked for a program to manage insurance records with fields like name, policy number, premium, and unique reference, sortable by name.",
+        "actionable_insights": "Enhance test sufficiency with edge cases where goal achievements require multi-step iterative code generation. Add structured augmentations simulating user corrections and goal re-specification under linguistic variations.",
+        "potential_gaps": "No provision of edge case augmentations for interpreting user input goals thoroughly. Scenarios involving soft-failures or partially achieved results are not evaluated.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1c9ec427e60027de4438a"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#8bee6c",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Reverse Engineering Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#a714fc",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#74fc4a",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#97c94a",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          {
+            "scenario_1": "A user asks for a Python script to manage insurance policyholder records but receives an empty response from the system. The system fails completely in generating the requested code."
+          },
+          {
+            "scenario_2": "A user provides detailed instructions for a Python script with specific functional requirements. The system generates no response or implementation, failing to meet any aspect of the requirements."
+          },
+          {
+            "scenario_3": "A customer requests code for sorting and tabular visualization of policyholder records. The system produces no output, leaving the user without the requested functionality."
+          },
+          {
+            "scenario_4": "A user expects functionality for adding, updating, and deleting records dynamically in a Python script, but the output from the system is either absent or completely empty."
+          },
+          {
+            "scenario_5": "A customer specifies error-handling requirements for a script. The system generates no implementation, thus leaving the requirements unmet and the use case unaddressed."
+          }
+        ],
+        "failure_reason": "The Code Assist-generated code is consistently empty and unresponsive across all test cases, failing to meet even the basic requirements specified in the user's prompt. This resulted in no functionality being implemented and scores reduced to 0 for all relevant metrics.",
+        "actionable_insights": [
+          "Introduce better coverage for complex and multi-step user prompts in the test data. Ensure that long-form prompts with detailed instructions are adequately tested and validated.",
+          "Incorporate validation tests specifically targeting empty or null outputs. Identify cases where the system generates no response and investigate underlying reasons.",
+          "Improve the code generation module’s ability to parse and process multi-step instructions by fine-tuning the system on datasets containing structured programming requests.",
+          "Test the system against diverse prompts containing specific requirements, such as error handling, dynamic functionality, and unique code generation, to uncover and resolve responsiveness gaps.",
+          "Implement fallback mechanisms to handle cases where the system fails completely (e.g., generating a draft boilerplate) rather than returning an empty response."
+        ],
+        "potential_gaps": [
+          "The test data lacks sufficient examples of long, detailed prompts with complex requirements, leading to the failure to parse and respond adequately.",
+          "There is insufficient validation testing for handling cases where the system generates no output at all (e.g., empty responses).",
+          "No apparent mechanism ensures that the augmentation system aligns its generated code with the user’s goals, particularly for multi-faceted requests.",
+          "The current test setup does not simulate real-world scenarios with layered and detailed programming requirements, highlighting a gap in the contextual understanding of user prompts.",
+          "The system seems to lack training or augmentation on cases involving error handling, dynamic updates, and data validation within programming scripts."
+        ],
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1ca32427e60027de44398"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#f55684",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#4c297b",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#d1b9a4",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "A user provides a detailed step-by-step Python script tutorial, and the system fails to generate any usable code.",
+          "A prompt outlines specific functions and features for code generation, but no output is generated.",
+          "A user requests sorting functionality for records, and the system does not generate any corresponding code.",
+          "A menu-driven user interface is outlined, but no implementation is provided in code.",
+          "An error-handling mechanism is requested, but no code is produced for it."
+        ],
+        "failure_reason": "The prompt provided multiple detailed instructions, but the generated code is entirely empty. Therefore, none of the directives from the prompt were implemented, resulting in a score of 0.",
+        "actionable_insights": "Introduce augmentations that ensure prompts are processed in smaller, stepwise chunks. This can help the model focus on one task at a time. Train the model with examples of multi-step instructions and validate that code is generated for each step.",
+        "potential_gaps": "The system appears to lack the ability to handle complex, multi-step instructions in a single prompt. Additionally, there may not be sufficient training data featuring detailed, multi-step prompts paired with expected code outputs.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "A user provides a simple and short prompt to create a function, but no code is generated.",
+          "A prompt to define a data structure is provided, but the generated code file remains empty.",
+          "A multi-step tutorial is given for handling unique policy records, but the output does not vary in length or implement steps.",
+          "Code generation for detailed input validation instructions results in an empty response.",
+          "Sorting or formatting implementations are outlined but not produced in the generated code."
+        ],
+        "failure_reason": "Both the Code Assist Generated Code and Expected Code are empty. This results in no differences and a code length difference of zero.",
+        "actionable_insights": "Review training data to ensure examples include both correctly implemented code and varied-length code resulting from similar prompts. Include data scenarios where the user expectations align with code outputs of different complexities and lengths.",
+        "potential_gaps": "Test data is insufficiently diverse in terms of prompt length and complexity. The system may fail to handle diverse input size variations or does not include examples of prompts with corresponding variable-length code outputs.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "A user provides a goal to generate a feature-specific code, and the system outputs nothing.",
+          "A case where multi-step input goals are mapped explicitly to separate functions, but the implementation is absent.",
+          "Generating structured code such as a menu-driven interface results in an empty response.",
+          "A user requests a block of code that combines sorting, displaying, and error handling but receives no implementation.",
+          "High-priority features like data validation and structured display are listed, but the generated code fails to meet the outlined goals."
+        ],
+        "failure_reason": "The Code Assist-generated code is an empty submission ('[]') and does not implement any of the required steps from the user prompt. As a result, all functionality checks failed, and the provided code does not achieve any of the goals outlined in the prompt.",
+        "actionable_insights": "Incorporate augmentations that mimic real-world scenarios where users iteratively refine system goals. Train the system with feedback loops that map incremental user inputs to functional outputs for achieving complex goals.",
+        "potential_gaps": "The system is unable to decompose and execute multi-step goals into implemented code. Lack of iterative refinement and feedback mechanisms within test data could be causing failure.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1ca55427e60027de443a6"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#645c2a",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#99db9d",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#7435cd",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Create a Python script to process employee payroll records with calculations for bonuses and taxes.",
+          "Generate a Python script to manage student records: name, grade, and attendance, sortable by grade.",
+          "Design a Python program to validate and summarize online shopping orders: order ID, items, total price.",
+          "Develop a Python application to monitor inventory: item ID, quantity, and expiration date, sortable by expiration date.",
+          "Write a Python function to manage library books: ISBN, title, author, and genre, with a filter by genre."
+        ],
+        "failure_reason": "The user prompt does not contain any explicit directive phrases, such as 'Ensure that,' 'Make sure to,' or other similar instructional terms. Without these directive expressions, there are no specific guidelines to assess for compliance in the Code Assist-generated code.",
+        "actionable_insights": "Incorporate directive phrases into the test prompts to clearly define expectations and make compliance easier to assess. Examples include 'Ensure the code implements sorting functionality,' and 'Make sure the structured display is as specified in the requirements.'",
+        "potential_gaps": "The test data lacks clear directive phrases or instructions within prompts, leading to ambiguous requirements and failure of instruction handling metrics.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Develop a function to calculate order totals for ecommerce transactions, with test cases for both large and small data sets.",
+          "Write Python code for a clinic to manage patient records: name, visit date, and charges, sortable by charges.",
+          "Create a program to handle hotel bookings, ensuring proper validations for check-in and check-out dates.",
+          "Generate Python scripts for inventory tracking, dynamically updating item counts based on sales trends.",
+          "Construct a script for processing large-scale data inputs for insurance claims, ensuring consistent capacity handling."
+        ],
+        "failure_reason": "Since both the Code Assist Generated Code and the Expected Code are empty, there is no variation and they are identical.",
+        "actionable_insights": "Introduce prompts with varying levels of complexity for code generation to evaluate how the system performs under different requirements. Ensure expected code outputs are well-defined in the test data.",
+        "potential_gaps": "The lack of diverse and well-defined example outputs for comparison in the test data creates a gap for measuring the Code Length Variation Index.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Create a Python script to manage academic classes: course ID, instructor, and enrolled students, sortable by course ID.",
+          "Write a program to monitor warehouse logistics: shipping IDs, destination, and weight for sorting.",
+          "Develop a system to handle personal budget tracking: expense category, amount, and total budget balance.",
+          "Generate code to simulate online product review functionalities: user ID, review text, and average ratings calculations.",
+          "Write a Python module to process customer service tickets: ticket ID, priority level, and resolution due date."
+        ],
+        "failure_reason": "The generated code is entirely missing and does not meet the user prompt requirements. It fails to implement even the basic structure for managing insurance records, sorting functionality, or any display mechanism.",
+        "actionable_insights": "Design prompts that explicitly specify required features and ensure a comprehensive suite of test scripts is available to validate these requirements. Additional edge cases for missing features should be included.",
+        "potential_gaps": "Insufficient coverage of basic requirements and lack of enforcement for mandatory features in the test-data generation pipeline result in failures to meet expectations.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1ca96427e60027de443b4"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#296a17",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#27a98b",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 33.33333333333333,
+        "segments": [
+          {
+            "color": "#699fcf",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Scenario 1: The system generates partially implemented Python code for managing insurance records that includes some function definitions but is missing implementation details like sorting or display features.",
+          "Scenario 2: The system outputs only a basic script skeleton without implementing the required fields such as policyholder names or policy numbers.",
+          "Scenario 3: The generated script includes irrelevant functionalities (e.g., managing other business data) unrelated to the user request.",
+          "Scenario 4: The generated code produces incorrect outputs, such as unsorted records, despite fulfilling other specifications.",
+          "Scenario 5: The system generates code that uses unsupported or deprecated Python libraries, making the solution non-functional."
+        ],
+        "failure_reason": "The provided Code Assist-generated code is an empty list, meaning none of the directives from the user prompt have been implemented. As a result, the implementation score is zero because no instructions were satisfied from the given content.",
+        "actionable_insights": "Include training data scenarios that involve multi-step, highly detailed user instructions and ensure that the system demonstrates the capability to break down requests into actionable components. Add test cases that evaluate the system's ability to manage step-by-step guidance and implement modular solutions for complex tasks. Enhance training with sample implementations of Python scripts for record management to improve understanding of user expectations.",
+        "potential_gaps": "The system appears to lack adequate exposure to multi-step, specific implementation instructions or real-life examples of Python scripts. It also struggles to parse and prioritize detailed inputs, such as managing and displaying structured data.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Scenario 1: Compare two Python scripts—one generated by the system and the other a correct implementation—with differing levels of detail in variable initialization.",
+          "Scenario 2: Include test cases where code length varies significantly due to optional optimizations or simplifications.",
+          "Scenario 3: Assess the system's ability to detect missing features, such as data sorting, when analyzing longer, more complex scripts.",
+          "Scenario 4: Evaluate scripts that contain placeholders or unimplemented methods to determine if the system can identify missing features or incomplete code.",
+          "Scenario 5: Test the system's ability to compare fully implemented versus partially implemented scripts and detect meaningful differences."
+        ],
+        "failure_reason": "Both the Code Assist Generated Code and the Expected Code are empty. No differences in code length or structure were identified.",
+        "actionable_insights": "Develop detailed augmentation scenarios emphasizing varying levels of code completeness (e.g., partially implemented scripts alongside correct examples). Train the system to recognize differences in structure between generated and expected outputs, such as missing code snippets or functions.",
+        "potential_gaps": "The system cannot effectively process or evaluate scenarios where there is a lack of input data or templates. It requires exposure to cases comparing incomplete and complete implementations.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Scenario 1: Generate Python scripts based on user scenarios and validate that they include functionalities such as data sorting and structured display.",
+          "Scenario 2: Test the robustness of the system's output by gradually increasing the complexity of user prompts, starting with simple scripts and moving to multi-feature implementations.",
+          "Scenario 3: Include prompts that explicitly instruct modular programming (e.g., separating logic into functions for storing, sorting, and displaying records).",
+          "Scenario 4: Evaluate whether the system includes data validation techniques, such as checking for missing fields (e.g., policy numbers or premium amounts).",
+          "Scenario 5: Test if the system generates properly annotated code that includes comments describing each module and its purpose."
+        ],
+        "failure_reason": "The generated code is completely empty, and it fails to address any of the user's specified requirements for managing records of insurance policyholders. As the prompt explicitly asks for a robust and user-friendly Python script with functionalities to store, organize, sort, and display data systematically, the lack of any implementation means the generated code does not fulfill even the basic requirements, resulting in a score of 0.0.",
+        "actionable_insights": "Increase the complexity and specificity of test cases to better assess the system's ability to handle comprehensive user requests for functionality. Train the model with diverse examples of code generation tasks involving similar real-life data handling and organization scenarios. Add focus on aligning generated scripts with user instructions, prioritizing usability and completeness of features.",
+        "potential_gaps": "The system struggles with end-to-end implementation of detailed instructions, indicating a lack of generalization in applying functional programming knowledge to meet user requirements.",
+        "priority": "High"
+      }
+    ]
+  }
+},
+{
+  "_id": {
+    "$oid": "67c1cabd427e60027de443c2"
+  },
+  "executionId": "67c1c56a427e60027de44244",
+  "metrics": {
+    "metrics": [
+      {
+        "heading": "Instruction Handling",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#fd99d4",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Ground Truth Similarity",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#83f486",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Code Length Variation Index",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#b5c6e1",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      },
+      {
+        "heading": "Goal Accuracy Code Fix",
+        "totalPercentage": 25,
+        "segments": [
+          {
+            "color": "#2b831f",
+            "percentage": 100,
+            "label": "Unknown",
+            "id": 1
+          }
+        ]
+      }
+    ]
+  },
+  "insights": {
+    "insights": [
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Customer provides informal, conversational requirements without technical specificity.",
+          "Customer uses filler words like 'umm' and 'uhh' while describing their requirements.",
+          "Customer does not use directive phrases like 'build', 'create', or 'write' to provide clarity.",
+          "Customer combines multiple requests in one statement without clear demarcation.",
+          "Customer mixes technical language with conversational elements, reducing clarity."
+        ],
+        "failure_reason": "The user prompt does not contain any explicit directive phrases as defined in the task instructions. The user described their requirements in an informal and conversational manner without providing specific directions using instructional-level tone.",
+        "actionable_insights": "Introduce augmentations that simulate user inputs with varied levels of formality, including informal and unstructured requirements. Develop test scenarios where instructions are conversational and lack directive tones to evaluate how the system can extract actionable tasks from informal inputs.",
+        "potential_gaps": "Test data lacks diversity in user instruction tones, failing to account for informal, conversational inputs. The system does not handle ambiguous or multi-request prompts effectively.",
+        "priority": "High"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Customer asks for a piece of code but provides no example or partial output for reference.",
+          "Customer request does not include expected outcomes or results for the system to compare against.",
+          "Customer requests complex functionalities but provides vague or incomplete specifications.",
+          "Customer provides incomplete programming-related requirements with missing context.",
+          "Customer assumes system defaults to understanding technical requirements without clarification."
+        ],
+        "failure_reason": "Both input code blocks are empty, so no comparison or scoring can be performed.",
+        "actionable_insights": "Incorporate scenarios with incomplete user requirements or absent ground truth data to test the system's default fallback mechanisms. Introduce augmentation types where the system must infer outputs from minimal input indications.",
+        "potential_gaps": "Test cases do not address situations where no reference code or ground truth is provided, leading to system failure in score computation and comparison tasks.",
+        "priority": "Medium"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Customer request results in both generated code and expected code being empty.",
+          "Customer provides a prompt that fails to elicit any output from the system.",
+          "Customer inputs generic requirements, resulting in a lack of differentiateable outputs.",
+          "System encounters empty or null outputs in response to user requests.",
+          "System fails to handle edge cases where both expected input and output are undefined."
+        ],
+        "failure_reason": "Both the Code Assist Generated Code and the Expected Code are empty, resulting in no changes or differences.",
+        "actionable_insights": "Implement test cases where the system must handle and process null or empty outputs effectively. Create augmentations for edge cases with no expected outputs and evaluate how the system provides reasoning or fallback handling.",
+        "potential_gaps": "Test data does not sufficiently cover edge cases involving empty or null outputs, which leads to a lack of robust handling of such scenarios.",
+        "priority": "Low"
+      },
+      {
+        "augmentation_type": "Unknown",
+        "example_scenarios": [
+          "Customer requests functionality without detailing specific technical requirements (e.g., 'store insurance details').",
+          "Customer specifies features (e.g., 'sorting by name') without providing examples or structural context.",
+          "Customer asks for data visualization (e.g., 'show nice look') without defining the layout or format.",
+          "System receives a vague multi-part request and fails to address any part due to lack of prioritization.",
+          "Customer's input lacks enough clarity for functional translation into code."
+        ],
+        "failure_reason": "The code fails to meet any of the functional requirements specified in the user prompt, such as storing insurance details, sorting by name, or displaying the data in a nice format. As no actual code is provided, it does not fulfill the user's request in any capacity, resulting in a score of 0.",
+        "actionable_insights": "Augment test cases with multi-part requirements where the system must break down tasks and identify priorities. Create scenarios where the system explicitly asks clarifying questions to fill the gaps in vague or incomplete customer prompts.",
+        "potential_gaps": "Test cases do not evaluate how the system prioritizes or handles vague and multi-dimensional prompts, resulting in a complete failure to address functional requirements.",
+        "priority": "High"
+      }
+    ]
+  }
+}]
