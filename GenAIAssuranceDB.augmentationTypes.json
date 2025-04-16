@@ -1,0 +1,82 @@
+[{
+  "_id": {
+    "$oid": "67bb7c4db4754cbd807b9eda"
+  },
+  "projectType": "CODEGEN",
+  "prompt": [
+    "Direct Prompt",
+    "Few Shot Prompt",
+    "Stepwise Prompt",
+    "Paraphrasing",
+    "Synonym Replacement",
+    "Brevity",
+    "Verbosity",
+    "Broken English",
+    "Multilingual",
+    "Rude Tone",
+    "Sarcastic Tone",
+    "Word to Number",
+    "Number to Word",
+    "Alter Key Entities",
+    "String Repeat",
+    "Case Sensitivity",
+    "Language - Spanish",
+    "Language - German",
+    "Chain Of Thought"
+  ],
+  "code": [
+    {
+      "augType": "Syntax-Level Augmentations",
+      "subAugType": [
+        "Introduce Special Characters",
+        "Change Function/Variable Case",
+        "Induce Whitespaces",
+        "Missing Semicolons/Brackets",
+        "Use Reserved Keywords as Function names"
+      ]
+    },
+    {
+      "augType": "Security and Performance Augmentations",
+      "subAugType": [
+        "Hardcode Sensitive Data",
+        "Introduce Infinite Loops"
+      ]
+    },
+    {
+      "augType": "Structural-Level Augmentations",
+      "subAugType": [
+        "Rearrange Code Blocks",
+        "Add Dead Code",
+        "Comment Out Critical Code",
+        "Duplicate Code Snippets"
+      ]
+    },
+    {
+      "augType": "Code Generation Augmentation",
+      "subAugType": [
+        "Remove one complete file/Remove one section of file"
+      ]
+    },
+    {
+      "augType": "Dependency-Level Augmentations",
+      "subAugType": [
+        "Change Library Versions",
+        "Change/Break Import",
+        "Introduce Unused Dependencies"
+      ]
+    },
+    {
+      "augType": "Logical-Level Augmentations",
+      "subAugType": [
+        "Remove Return Statements",
+        "Reverse Logic: Change > to < or == to !="
+      ]
+    },
+    {
+      "augType": "Multi-Programming Language Augmentations",
+      "subAugType": [
+        "Combine or embed snippets from different programming languages in one file"
+      ]
+    }
+  ]
+}]
