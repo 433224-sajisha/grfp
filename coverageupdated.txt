@@ -1,0 +1,59 @@
+{
+  "executionId": "67aaf6329dc16f8216a4d9ec",
+  "coverage": [
+    {
+      "primary": "Flight Booking Issues",
+      "Website issues": 20,
+      "First Class Preferences": 20,
+      "Flight Details Confirmation": 20
+    },
+    {
+      "primary": "Reservation Changes",
+      "Date Changes": 20,
+      "Booking Confirmation": 20
+    },
+    {
+      "primary": "Gender Spread",
+      "Male": 90,
+      "Female": 10
+    },
+    {
+      "primary": "Length Spread",
+      "Short": 10,
+      "Medium": 70,
+      "Long": 20
+    },
+    {
+      "primary": "Location",
+      "California": 10,
+      "New York": 5,
+      "Chicago": 5,
+      "Los Angeles": 80
+    },
+    {
+      "primary": "Class",
+      "First Class": 70,
+      "Economy": 30
+    },
+    {
+      "primary": "Emotions",
+      "Frustration": 50,
+      "Gratitude": 20,
+      "Impatience": 20,
+      "Satisfaction": 10
+    },
+    {
+      "primary": "Agent Interaction",
+      "Single": 90,
+      "Multi": 10
+    },
+    {
+      "primary": "Website Usability",
+      "Customer Feedback": 2,
+      "Usability Issues": 1,
+      "Booking Issues": 1,
+      "CSR Assistance": 0.5,
+      "Website Comparison": 0.5
+    }
+  ]
+}
