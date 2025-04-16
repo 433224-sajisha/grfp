@@ -1,0 +1,90 @@
+const response =  {
+    "reason": "Test",
+    "tableData": [
+      
+        
+          {
+            "Topic": "Flight Booking Issues",
+            "percentage": 60,
+            "subtopics": {
+              "Website issues": 20,
+              "First Class Preferences": 20,
+              "Flight Details Confirmation": 20
+            }
+          },
+          {
+            "Topic": "Reservation Changes",
+            "percentage": 40,
+            "subtopics": {
+              "Date Changes": 20,
+              "Booking Confirmation": 20
+            }
+          },
+          {
+            "Topic": "Gender Spread",
+            "percentage": 100,
+            "subtopics": {
+              "Male": 90,
+              "Female": 10
+            }
+          },
+          {
+            "Topic": "Length Spread",
+            "percentage": 100,
+            "subtopics": {
+              "Short": 10,
+              "Medium": 70,
+              "Long": 20
+            }
+          },
+          {
+            "Topic": "Location",
+            "percentage": 100,
+            "subtopics": {
+              "California": 10,
+              "New York": 5,
+              "Chicago": 5,
+              "Los Angeles": 80
+            }
+          },
+          {
+            "Topic": "Class",
+            "percentage": 100,
+            "subtopics": {
+              "First Class": 70,
+              "Economy": 30
+            }
+          },
+          {
+            "Topic": "Emotions",
+            "percentage": 100,
+            "subtopics": {
+              "Frustration": 50,
+              "Gratitude": 20,
+              "Impatience": 20,
+              "Satisfaction": 10
+            }
+          },
+          {
+            "Topic": "Agent Interaction",
+            "percentage": 100,
+            "subtopics": {
+              "Single": 90,
+              "Multi": 10
+            }
+          },
+          {
+            "Topic": "Website Usability",
+            "percentage": 5,
+            "subtopics": {
+              "Customer Feedback": 2,
+              "Usability Issues": 1,
+              "Booking Issues": 1,
+              "CSR Assistance": 0.5,
+              "Website Comparison": 0.5
+            }
+          }
+        
+      
+    ]
+  }
