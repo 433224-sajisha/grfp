@@ -1,0 +1,187 @@
+{
+  "_id": {
+    "$oid": "67c046067f6f1776938c3bbc"
+  },
+  "name": "AllMetricExec",
+  "projectName": "CodeGeneration",
+  "metrices_data": [
+    {
+      "name": "Model Quality",
+      "metrices": [
+        {
+          "name": "Instruction Handling",
+          "value": "inst_handling",
+          "description": "Ensures proper adherence to given instructions.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "inverse": false,
+          "status": true
+        },
+        {
+          "name": "Ground Truth Similarity",
+          "value": "ground_truth_similarity",
+          "description": "Measures the similarity between the generated code and the expected code.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "inverse": false,
+          "status": true
+        },
+        {
+          "name": "Reverse Engineering Code Fix",
+          "value": "reverse_eng_code_fix",
+          "description": "Measures the similarity between the inferred prompt nad the original prompt.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "inverse": false,
+          "status": true
+        },
+        {
+          "name": "Reverse Engineering Code Gen",
+          "value": "reverse_eng_code_gen",
+          "description": "Measures the similarity between the inferred prompt nad the original prompt.",
+          "enabled": false,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "inverse": false,
+          "status": true
+        },
+        {
+          "name": "Code Length Variation Index",
+          "value": "code_length_variation_index",
+          "description": "Analyzes variations in code length to maintain consistency and structure.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "inverse": false,
+          "status": true
+        },
+        {
+          "name": "Goal Accuracy Code Fix",
+          "value": "goal_acc_code_fix",
+          "description": "Evaluates how accurately the code generated aligns with the intended goal.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "inverse": false,
+          "status": true
+        },
+        {
+          "name": "Goal Accuracy Code Gen",
+          "value": "goal_acc_code_gen",
+          "description": "Evaluates how accurately the code generated aligns with the intended goal.",
+          "enabled": false,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "inverse": false,
+          "status": true
+        }
+      ]
+    },
+    {
+      "name": "Trustworthy Assurance",
+      "metrices": [
+        {
+          "name": "Security Data Exposure",
+          "value": "security_data_exposure",
+          "description": "Detects and prevents exposure of sensitive security-related information in the code.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "inverse": false,
+          "status": true
+        },
+        {
+          "name": "Business Guidelines",
+          "value": "code_business_guidelines",
+          "description": "Ensures adherence to coding standards maintained by each business line.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "inverse": false,
+          "status": true
+        }
+      ]
+    },
+    {
+      "name": "Data Quality",
+      "metrices": [
+        {
+          "name": "Coverage",
+          "value": "coverage",
+          "description": "Calculates the extent of content coverage and identifies gaps in information.",
+          "enabled": false,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "coverage_topics": {
+            "level": 2,
+            "data": []
+          },
+          "inverse": false,
+          "status": true
+        }
+      ]
+    },
+    {
+      "name": "Code Security",
+      "metrices": [
+        {
+          "name": "Duplicated Lines",
+          "value": "duplicated_lines",
+          "description": "Detects and minimizes the presence of duplicated lines in the code.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "coverage_topics": {},
+          "inverse": false,
+          "status": true
+        },
+        {
+          "name": "Hard Coded Lines",
+          "value": "hard_coded_lines",
+          "description": "Identifies and mitigates the use of hard-coded values in the code.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "coverage_topics": {},
+          "inverse": false,
+          "status": true
+        },
+        {
+          "name": "Code Smell",
+          "value": "code_smell",
+          "description": "Detects and highlights potential code quality issues and maintainability concerns.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "coverage_topics": {},
+          "inverse": false,
+          "status": true
+        }
+      ]
+    },
+    {
+      "name": "Code Standards",
+      "metrices": [
+        {
+          "name": "Unused Variables/Imports",
+          "value": "unused_variables_imports",
+          "description": "Identifies and removes unused variables and imports to enhance code efficiency.",
+          "enabled": true,
+          "thresholdValue": 0.5,
+          "Is LLM": true,
+          "coverage_topics": {},
+          "inverse": false,
+          "status": true
+        }
+      ]
+    }
+  ],
+  "total_count": 11,
+  "desc": "This configuration will hold selected metrics",
+  "createdBy": "testUser",
+  "executedDate": "2025-02-27T11:01:26.120254",
+  "modifiedDate": "2025-02-27T11:01:26.120254"
+}
