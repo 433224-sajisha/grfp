@@ -1,0 +1,151 @@
+[{
+  "_id": {
+    "$oid": "6825fc7d6d138f14b9960b99"
+  },
+  "executionId": "6825f4ca6d138f14b9960866",
+  "coverage": [
+    {
+      "Topic": "Flight Booking & Fare Deals",
+      "percentage": 14,
+      "subtopics": {
+        "Fare Classes & Restrictions": 30,
+	"Multi‑City": 20,
+	"Non‑Refundable Tickets": 25,
+	"Price Alerts & Watchlists": 25
+      },
+      "Bias_Status": "✅ Balanced",
+      "Recommend_Augmentation": [
+        "Brevity",
+        "Verbosity",
+        "Paraphrasing"
+      ],
+      "Insights(with Real-World Context)": "The distribution now reflects a balanced representation of booking types. Fare classes (30%) remain significant due to their complexity. Multi-city bookings (20%) have been increased to better represent complex itineraries. Non-refundable tickets and price alerts (25% each) reflect budget-conscious traveler needs. This balance ensures comprehensive coverage of various booking scenarios. Example: Include more scenarios like 'Comparing fare classes for a family vacation' or 'Setting up price alerts for flexible travel dates'.",
+      "Targeted_Base_Data_strategy": "Enhance multi-city and seasonal scenarios: Create conversations about complex routing options, like 'Business trip to Tokyo with weekend layover in Seoul' and 'Finding the best deals for peak summer travel to Europe' to represent diverse booking patterns and seasonal variations."
+    },
+    {
+      "Topic": "Changes & Cancellations",
+      "percentage": 12,
+      "subtopics": {
+        "Rebooking": 50,
+	"Cancellation Fees & Waivers": 30,
+	"Delay Compensation": 20
+      },
+      "Bias_Status": "⚠️ Unbalanced",
+      "Recommend_Augmentation": [
+       "Multilingual Paraphrasing",
+       "Paraphrasing",
+       "Informal Language",
+       "Self-Service Portal",
+       "No-Penalty Reschedulin",
+       "Alternate Routes"
+      ],
+      "Insights(with Real-World Context)": "This distribution aligns with typical customer service volumes but underrepresents delay compensation queries. While less frequent, these often involve complex policy explanations. Consider increasing delay compensation scenarios to 25-30%. Example: Include more scenarios about EU261 compensation rules for flights departing from or arriving in the EU.",
+      "Targeted_Base_Data_strategy": "Expand delay compensation scenarios: Add dialogues about specific airline policies, like 'Overnight delay due to mechanical issues on a US to EU flight' to cover varied compensation rules."
+    },
+    {
+      "Topic": "Check‑In & Boarding Assistance",
+      "percentage": 20,
+      "subtopics": {
+        "Online & Airport Check‑In": 50,
+	"Group Boarding": 20,
+	"Security & Document Checks": 30
+      },
+      "Bias_Status": "✅ Balanced",
+      "Recommend_Augmentation": [
+        "None"
+      ],
+      "Insights(with Real-World Context)": "This distribution reflects the shift towards digital check-in while maintaining focus on crucial security checks. Group boarding, while less frequent, often involves more complex scenarios. Consider slightly increasing group boarding to 25% to better prepare for these situations. Example: Include more queries about family boarding policies or handling large tour groups",
+      "Targeted_Base_Data_strategy": Enhance group boarding scenarios: Create conversations about specific airline policies for families with young children or large groups, like 'Boarding assistance for a school trip of 30 students'."
+    },
+    {
+      "Topic": "Baggage Allowances & Claims",
+      "percentage": 10,
+      "subtopics": {
+        "Carry‑On vs. Checked Allowances": 45,
+	"Excess Baggage Fees & Waivers": 35,
+	"Gate‑Checked Items": 20
+      },
+      "Bias_Status": "⚠️ Unbalanced",
+      "Recommend_Augmentation": [
+        "Scenario Expansion"
+      ],
+      "Insights(with Real-World Context)": "This distribution aligns with common baggage queries but underrepresents gate-checked items. While less frequent, these often cause confusion and require immediate assistance. Consider increasing gate-checked scenarios to 25-30%. Example: Include more scenarios about gate-checking strollers or musical instruments to cover a wider range of traveler needs.",
+      "Targeted_Base_Data_strategy": "Diversify gate-checked item scenarios: Add conversations about policies for gate-checking items on regional jets or during peak travel periods to reflect real-world variability."
+    },
+    {
+      "Topic": "Travel Documentation & Visas",
+      "percentage": 20,
+      "subtopics": {
+        "Passport Validity & Blank Pages": 40,
+	"Health & Entry Formalities": 50,
+	"Transit / Layover Regulations": 10
+      },
+      "Bias_Status": "⚠️ Unbalanced",
+      "Recommend_Augmentation": [
+        "Paraphrasing"
+      ],
+      "Insights(with Real-World Context)": "This distribution reflects current travel concerns but is unbalanced. Health & entry formalities (50%) dominate due to rapidly changing global health regulations. Passport validity (40%) remains a constant concern. Transit regulations (10%) are less frequent but often complex. To rebalance, increase transit scenarios to 25-30%, as these often involve intricate rules and time-sensitive decisions. Example: Include more queries about visa requirements for layovers in countries like China or Brazil, which have specific transit visa policies.",
+      "Targeted_Base_Data_strategy": "Expand transit regulation scenarios: Create dialogues about complex layover situations, like 'Indian national with 12-hour layover in Frankfurt en route to Canada' to cover diverse transit rules."
+    },
+    {
+      "Topic": "Travel Insurance & Refunds",
+      "percentage": 6,
+      "subtopics": {
+        "Coverage Types": 40,
+	"Refund & Payout Timelines": 35,
+	"Policy Exclusions & Add‑Ons": 25
+      },
+      "Bias_Status": "✅ Balanced",
+      "Recommend_Augmentation": [
+        "None"
+      ],
+      "Insights(with Real-World Context)": "This distribution reflects common insurance queries with a good balance across categories. To further improve, consider slightly increasing policy exclusion scenarios to 30% as these often involve detailed explanations and manage customer expectations. Example: Include more scenarios about coverage for extreme sports or pre-existing medical conditions to highlight important policy limitations.",
+      "Targeted_Base_Data_strategy": "Enhance policy exclusion scenarios: Add conversations about specific exclusions like 'Coverage for rental car damage in Costa Rica' or 'Exclusions for adventure activities like bungee jumping' to better prepare for nuanced insurance queries"
+    },
+    {
+      "Topic": "Payment Options & Transparency",
+      "percentage": 6,
+      "subtopics": {
+        "Transparent Pricing & Junk‑Fee Rules": 45,
+	"Hidden‑Fee Alerts": 35,
+	"Currency & Exchange Issues": 20
+      },
+      "Bias_Status": "⚠️ Unbalanced",
+      "Recommend_Augmentation": [
+        "Verbosity",
+        "Paraphrasing"
+      ],
+      "Insights(with Real-World Context)": "This distribution aligns with customer priorities but underrepresents currency and exchange issues. While less frequent, these often involve complex explanations and vary by region. Consider increasing currency and exchange scenarios to 25-30%. Example: Include more queries about dynamic currency conversion or credit card foreign transaction fees to better prepare for international booking scenarios.",
+      "Targeted_Base_Data_strategy": "Expand currency and exchange scenarios: Create dialogues about specific situations like 'Booking a US flight with Euros' or 'Understanding taxes and fees for multi-currency bookings' to reflect global travel complexities."
+    },
+    {
+      "Topic": "Gender",
+      "percentage": 50,
+      "subtopics": {
+        "Male": 50,
+	"Female": 50
+      },
+      "Bias_Status": "✅ Balanced",
+      "Recommend_Augmentation": [
+        "Gender Diversity Injection"
+      ],
+      "Insights(with Real-World Context)": "The current 50% male, 40% female split is relatively balanced and reflects general travel demographics. However, it's important to ensure that this distribution is represented across all types of travel scenarios. For instance, business travel queries might skew more male, while family vacation planning might have more female representation. To further improve, consider including non-binary gender options (e.g., 50% male, 45% female, 5% non-binary) to reflect growing recognition of gender diversity. Example: Include scenarios of non-binary travelers asking about gender-neutral accommodation options or passport gender marker choices",
+      "Targeted_Base_Data_strategy": "Diversify gender representation: Create balanced scenarios across travel types. For instance, 'Female executive booking business class to Singapore', 'Male parent arranging family vacation', and 'Non-binary traveler inquiring about inclusive facilities at resort destinations'.."
+    },
+    {
+      "Topic": "Customer by Tenure",
+      "percentage": 32,
+      "subtopics": {
+        "New (< 2 years)": 40,
+	"Loyal (2-4 years)": 35,
+	"Long Term (>5 years)": 25
+      },
+      "Bias_Status": "⚠️ Unbalanced",
+      "Recommend_Augmentation": [
+        "Number Shuffle for Age"
+      ],
+      "Insights(with Real-World Context)": "This distribution shows an imbalance favoring newer customers, which may not accurately reflect the customer base of established travel companies. New customers (40%) often require more basic assistance, while loyal (35%) and long-term (25%) customers might have more complex needs or expectations. To rebalance, consider increasing long-term customer scenarios to 30-35%, as these often involve loyalty program intricacies and higher-value transactions. Example: Include more scenarios of long-term customers leveraging their status for upgrades or special services, or navigating complex multi-leg itineraries using accumulated miles",
+      "Targeted_Base_Data_strategy": "Enhance long-term customer scenarios: Create dialogues that reflect the complex needs of experienced travelers, such as 'Platinum member booking round-the-world trip using mix of points and cash' or 'Long-term customer requesting retroactive credit for forgotten flight'"
+    }
+  ]
+}]
